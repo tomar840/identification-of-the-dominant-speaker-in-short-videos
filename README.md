@@ -15,4 +15,15 @@ Here in this project, we have tried to find out the dominant speaker in YouTube 
 Since in every video has a unique speaker, so first we try to solve this problem using face recognition. For finding face embeddings we have 
 used [OpenFace Library](https://cmusatyalab.github.io/openface/). 
 
- ### 2.2 Using 
+ ### 2.2 Using Spatial Models
+ Since the problem is basically object detection, so we haved tried to use transfer learning for CNN pre-trained on ImageNet. 
+ We did two types of fine tuning on CNN -
+  #### 2.2.1 Tuning of all layers of CNN.
+  Weights of pre-trained CNN has been used for initialization and parameters of all the layers has been updated.
+  
+  #### 2.2 Tuning of only final layer
+  Only the parameters of last layer of CNN has been updated while the rest of the layers has been freezed. 
+  
+  
+## 3. Data Augmentation
+ We have used data augmentation for avoiding the over-fitting of the models. We have randomly cropped frame, flip it horizontal and cropped it. We have included faces of these personalities to avoid CNN remebering the background of the frames. These faces were extracted from the [OpenFace Library](https://cmusatyalab.github.io/openface/). 
