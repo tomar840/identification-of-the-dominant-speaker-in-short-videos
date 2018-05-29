@@ -27,3 +27,17 @@ used [OpenFace Library](https://cmusatyalab.github.io/openface/).
   
 ## 3. Data Augmentation
  We have used data augmentation for avoiding the over-fitting of the models. We have randomly cropped frame, flip it horizontal and cropped it. We have included faces of these personalities to avoid CNN remebering the background of the frames. These faces were extracted from the [OpenFace Library](https://cmusatyalab.github.io/openface/). 
+ 
+## 4. Performance
+ ### 4.1 Performance on Fine tuning on last layer
+  Technique                  | Acc.    |
+-----------------------------|:-------:|
+With data augmentation       | 62.92 % | 
+without data augmentation    | 53.20 % | 
+
+### 4.2 Performance on Fine tuning on all layer
+  Technique                  | Acc.    |
+-----------------------------|:-------:|
+With data augmentation       | 69.46 % | 
+without data augmentation    | 62.27 % | 
+
