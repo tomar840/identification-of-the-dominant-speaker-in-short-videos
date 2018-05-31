@@ -21,7 +21,7 @@ used [OpenFace Library](https://cmusatyalab.github.io/openface/).
   #### 2.2.1 Tuning of all layers of CNN.
   Weights of pre-trained CNN has been used for initialization and parameters of all the layers has been updated.
   
-  #### 2.2 Tuning of only final layer
+  #### 2.2.2 Tuning of only final layer
   Only the parameters of last layer of CNN has been updated while the rest of the layers has been freezed. 
   
   
